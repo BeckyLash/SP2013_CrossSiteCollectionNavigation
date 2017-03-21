@@ -6,4 +6,6 @@ This SharePoint 2013 farm solution illustrates a custom branding solution that i
 4. Applying custom master page with minimal changes from Seattle and very little .css
 5. Applying master page without using Publishing feature by implementing a feature stapler
 
-https://github.com/BeckyLash/SP2013_CrossSiteCollectionNavigation/blob/master/SP2013CustomBrandingOverview.png
+<kbd>
+<img src="https://github.com/BeckyLash/SP2013_CrossSiteCollectionNavigation/blob/master/SP2013CustomBrandingOverview.png">
+</kbd>
