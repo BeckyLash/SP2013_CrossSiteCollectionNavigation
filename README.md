@@ -9,3 +9,10 @@ This SharePoint 2013 farm solution illustrates a custom branding solution that i
 <kbd>
 <img src="https://github.com/BeckyLash/SP2013_CrossSiteCollectionNavigation/blob/master/SP2013CustomBrandingOverview.png">
 </kbd>
+
+
+To do:
+Debug 508 page
+Fix third level menu issue
+Test features
+Remove full qualified domain from user control
