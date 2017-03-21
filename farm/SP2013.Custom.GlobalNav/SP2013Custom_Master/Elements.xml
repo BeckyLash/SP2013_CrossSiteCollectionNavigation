@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SP2013Custom_Master" Url="_catalogs/masterpage">
+    <File Path="SP2013Custom_Master\SP2013Custom\custom.css" Url="SP2013Custom/custom.css" Type="GhostableInLibrary" ReplaceContent="True" IgnoreIfAlreadyExists="True" />
+    <File Path="SP2013Custom_Master\SP2013Custom\customheader.png" Url="SP2013Custom/customheader.png" Type="GhostableInLibrary" ReplaceContent="True" IgnoreIfAlreadyExists="True" />
+    <File Path="SP2013Custom_Master\SP2013Custom\logo.png" Url="SP2013Custom/logo.png" Type="GhostableInLibrary" ReplaceContent="True" IgnoreIfAlreadyExists="True" />
+    <File Path="SP2013Custom_Master\Elements2.xml" Url="SP2013Custom_Master/Elements2.xml" />
+    <File Path="SP2013Custom_Master\SP2013Custom\customHideNav.css" Url="SP2013Custom/customHideNav.css"  Type="GhostableInLibrary" ReplaceContent="True" IgnoreIfAlreadyExists="True" />
+    <File Path="SP2013Custom_Master\SP2013Custom.master" Url="SP2013Custom.master" Type="GhostableInLibrary" ReplaceContent="True" IgnoreIfAlreadyExists="True" >
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="ContentTypeID" Value="0x010105" />
+    </File>
+    <File Path="SP2013Custom_Master\SP2013Custom.preview" Url="SP2013Custom.preview" />
+  </Module>
+</Elements>

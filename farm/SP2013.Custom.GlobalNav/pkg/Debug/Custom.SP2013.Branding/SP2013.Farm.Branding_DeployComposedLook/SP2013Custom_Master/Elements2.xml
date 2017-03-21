@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AEPHQAMC_Master" Url="_catalogs/masterpage">
+   
+    <File Path="SP2013Custom_Master\SP2013Custom\customHideNav.css" Url="SP2013Custom/customHideNav.css" Type="GhostableInLibrary" ReplaceContent="True"  IgnoreIfAlreadyExists="True"/>
+   
+  </Module>
+</Elements>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SP2013Custom_Master\" Type="ElementManifest" />
+    <ProjectItemFile Source="SP2013Custom\custom.css" Target="SP2013Custom_Master\SP2013Custom\" Type="ElementFile" />
+    <ProjectItemFile Source="SP2013Custom\customheader.png" Target="SP2013Custom_Master\SP2013Custom\" Type="ElementFile" />
+    <ProjectItemFile Source="SP2013Custom\logo.png" Target="SP2013Custom_Master\SP2013Custom\" Type="ElementFile" />
+    <ProjectItemFile Source="SP2013Custom\customHideNav.css" Target="SP2013Custom_Master\SP2013Custom\" Type="ElementFile" />
+    <ProjectItemFile Source="Elements2.xml" Target="SP2013Custom_Master\" Type="ElementFile" />
+    <ProjectItemFile Source="SP2013Custom.master" Target="SP2013Custom_Master\" Type="ElementFile" />
+    <ProjectItemFile Source="SP2013Custom.preview" Target="SP2013Custom_Master\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

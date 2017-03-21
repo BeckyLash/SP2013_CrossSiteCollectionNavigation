@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AEPHQAMC_MasterSiteNav" Url="_catalogs/masterpage">
+    <File Path="AEPHQAMC_MasterSiteNav\AEP_HQAMCSiteNav.master" Url="AEP_HQAMCSiteNav.master" Type="GhostableInLibrary" ReplaceContent="True" >
+      <Property Name="UIVersion" Value="15" />
+      <Property Name="ContentTypeID" Value="0x010105" />
+    </File>
+    <File Path="AEPHQAMC_MasterSiteNav\AEP_HQAMCSiteNav.preview" Url="AEP_HQAMCSiteNav.preview" Type="GhostableInLibrary" ReplaceContent="True" />
+    <File Path="AEPHQAMC_MasterSiteNav\AEP_HQAMC\aep.css" Url="AEP_HQAMC/aep.css" Type="GhostableInLibrary" ReplaceContent="True" />
+    <File Path="AEPHQAMC_MasterSiteNav\AEP_HQAMC\aepHeader.png" Url="AEP_HQAMC/aepHeader.png" Type="GhostableInLibrary" ReplaceContent="True" />
+    <File Path="AEPHQAMC_MasterSiteNav\AEP_HQAMC\HQAMC.png" Url="AEP_HQAMC/HQAMC.png" Type="GhostableInLibrary" ReplaceContent="True" />
+  </Module>
+</Elements>

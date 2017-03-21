@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers >
+      <Receiver>
+        <Name>InheritBrandingWebProvisioned</Name>
+        <Type>WebProvisioned</Type>
+        <Assembly>SP2013.Custom.Branding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0eb8b5d2de4a9079</Assembly>
+        <Class>Custom.SP2013.Branding.InheritBranding.InheritBranding</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

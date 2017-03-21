@@ -1,0 +1,18 @@
+﻿<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SP2013 Custom Deploy Composed Look" ActivateOnDefault="FALSE" AlwaysForceInstall="TRUE" Description="Deploys Custom Branding for SharePoint 2013. Provisions the Custom master page with cross-site collection navigation, font schema, color schema, custom site logo, custom css and other items for the custom branding. When you activate this feature, custom branding is applied to the site collection and all subsites. Feature deactivation removes custom branding and applies the Seattle.master and Office composed look to all sites in the site collection. " Id="b26a1751-cb57-46ba-bb8b-5144888fd126" ReceiverAssembly="SP2013.Custom.Branding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0eb8b5d2de4a9079" ReceiverClass="Custom.SP2013.Branding.Features.DeployComposedLook.DeployComposedLookEventReceiver" Scope="Site" Version="1.1.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Theme1\Elements.xml" />
+    <ElementFile Location="Theme1\SP2013Custom.spcolor" />
+    <ElementManifest Location="SP2013Custom_Master\Elements.xml" />
+    <ElementFile Location="SP2013Custom_Master\Elements2.xml" />
+    <ElementFile Location="SP2013Custom_Master\SP2013Custom\custom.css" />
+    <ElementFile Location="SP2013Custom_Master\SP2013Custom\customheader.png" />
+    <ElementFile Location="SP2013Custom_Master\SP2013Custom\customHideNav.css" />
+    <ElementFile Location="SP2013Custom_Master\SP2013Custom\logo.png" />
+    <ElementFile Location="SP2013Custom_Master\SP2013Custom.master" />
+    <ElementFile Location="SP2013Custom_Master\SP2013Custom.preview" />
+  </ElementManifests>
+  <Properties>
+
+    <Property Key="MasterPage" Value="SP2013Custom.master"/>
+  </Properties>
+</Feature>

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="49bc16cf-d287-41f3-b864-73e2ebc83b1b" activateOnDefault="false" alwaysForceInstall="true" description="Deploys AEP Branding for SharePoint 2013. Provisions the AEP HQAMC master page with cross-site collection navigation, font schema, color schema, AEP HQAMC site logo, custom css and other items for the AMC AEP Branding. When you activate this feature, AEP Branding is applied to the site collection and all subsites. Feature deactivation removes AEP Branding and applies the Seattle.master and Office composed look to all sites in the site collection. " featureId="b26a1751-cb57-46ba-bb8b-5144888fd126" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.cb292c7c-9d84-4ca2-958c-c6fcd0da8168.FullName$" scope="Site" solutionId="00000000-0000-0000-0000-000000000000" title="AEP.HQAMC.Branding Deploy Composed Look" version="AAEAAAD/////AQAAAAAAAAAEAQAAAA5TeXN0ZW0uVmVyc2lvbgQAAAAGX01ham9yBl9NaW5vcgZfQnVpbGQJX1JldmlzaW9uAAAAAAgICAgBAAAAAQAAAAAAAAAAAAAACw==" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" isDesignerEnabled="false" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+  <projectItems>
+    <projectItemReference itemId="456e767b-48bb-49cd-b4a5-92543f5f270f" />
+    <projectItemReference itemId="10dbfd7f-ae64-4a8d-a790-c292f3789255" />
+  </projectItems>
+</feature>

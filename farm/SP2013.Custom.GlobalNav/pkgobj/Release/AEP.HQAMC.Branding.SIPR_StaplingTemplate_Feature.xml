@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="AEP.HQAMC.Branding.SIPR Stapling Template" ActivateOnDefault="FALSE" AlwaysForceInstall="TRUE" Description="Provisions AEP HQAMC branding automatically upon creating a site collection or web site. Scoped to the web app." Id="f7719f61-fbb6-4e06-8806-3a387e706b52" Scope="WebApplication" Version="1.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="StaplingSite\Elements.xml" />
+  </ElementManifests>
+</Feature>

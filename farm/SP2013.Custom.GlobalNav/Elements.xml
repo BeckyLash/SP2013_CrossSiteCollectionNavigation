@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AEP_HQAMC_Theme" Url="_catalogs/theme/15" RootWebOnly="TRUE">
+    <File Path="AEP_HQAMC_Theme\AEP_Branding2013_coloring.spcolor" Url="/AEP_Branding2013_coloring.spcolor" Type="GhostableInLibrary" />
+    <File Path="AEP_HQAMC_Theme\AEP_Branding2013fontscheme.spfont" Url="/AEP_Branding2013fontscheme.spfont" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

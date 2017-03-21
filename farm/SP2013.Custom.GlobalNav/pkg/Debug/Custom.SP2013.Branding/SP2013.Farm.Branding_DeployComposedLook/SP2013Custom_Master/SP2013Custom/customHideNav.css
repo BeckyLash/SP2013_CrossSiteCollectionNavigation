@@ -1,0 +1,20 @@
+﻿
+      /*/* SP2013 Custom tags to hide publishing and non-publishing navigation*/
+      /*hides home page link content global nav can go in hidenav*/
+
+.ms-breadcrumb-box ul.root > li.static > a {
+    display:none;
+}
+     /*hide Edit Links in global navigation*/
+ #DeltaTopNavigation .ms-core-listMenu-root .ms-listMenu-editLink
+  {
+      display: none !important;
+  }
+  
+  /*hide all links in global navigation 3/7/2016*/
+
+.ms-core-listMenu-horizontalBox {
+    visibility: hidden !important;
+    
+ 
+}

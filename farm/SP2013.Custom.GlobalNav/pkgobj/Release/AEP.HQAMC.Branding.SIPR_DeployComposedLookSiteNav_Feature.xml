@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="AEP.HQAMC.Branding.SIPR DeployComposedLookSiteNav" Id="bc4ebce0-8a4b-4cb4-a319-862e63108293" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="AEPHQAMC_MasterSiteNav\Elements.xml" />
+    <ElementFile Location="AEPHQAMC_MasterSiteNav\AEP_HQAMCSiteNav.master" />
+    <ElementFile Location="AEPHQAMC_MasterSiteNav\AEP_HQAMCSiteNav.preview" />
+    <ElementFile Location="AEPHQAMC_MasterSiteNav\AEP_HQAMC\aep.css" />
+    <ElementFile Location="AEPHQAMC_MasterSiteNav\AEP_HQAMC\aepHeader.png" />
+    <ElementFile Location="AEPHQAMC_MasterSiteNav\AEP_HQAMC\HQAMC.png" />
+  </ElementManifests>
+</Feature>

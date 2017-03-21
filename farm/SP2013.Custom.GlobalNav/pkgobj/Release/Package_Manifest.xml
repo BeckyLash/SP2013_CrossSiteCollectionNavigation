@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="46ed7209-4756-49cb-ba8e-c52e3208c676" Title="AEP.HQAMC.Branding.SIPR" Description="AEP.HQAMC.Branding.SIPR deployed a composed look and custom master page to the AEP." SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="AEP.HQAMC.Branding.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="Resources\AEP-Resource-en-US.resx" />
+  </RootFiles>
+  <TemplateFiles>
+    <TemplateFile Location="ControlTemplates\AEP.HQAMC.GlobalNav\AEP.HQAMC.GlobalNavKeyboard.ascx" />
+    <TemplateFile Location="ControlTemplates\AEP.HQAMC.GlobalNav\AEP.HQAMC.GlobalNav.ascx" />
+    <TemplateFile Location="Layouts\AEP.HQAMC.Branding\AEPHQAMCMenu.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="AEP.HQAMC.Branding.SIPR_StaplingTemplate\Feature.xml" />
+    <FeatureManifest Location="AEP.HQAMC.Branding.SIPR_DeployComposedLook\Feature.xml" />
+    <FeatureManifest Location="AEP.HQAMC.Branding.SIPR_ProvisionWebTheme\Feature.xml" />
+    <FeatureManifest Location="AEP.HQAMC.Branding.SIPR_DeployComposedLookSiteNav\Feature.xml" />
+  </FeatureManifests>
+</Solution>

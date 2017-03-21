@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{300A5637-261E-48D6-A710-07D590DD7829}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SP2013.Custom.Branding</RootNamespace>
+    <AssemblyName>SP2013.Custom.Branding</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <IncludeAssemblyInPackage>True</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>test.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomBranding.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomBranding.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPerformanceTimerLogger.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BrandingHelper.cs" />
+    <Compile Include="ControlTemplates\Custom.GlobalNav\SP2013.Custom.GlobalNavKeyboard.ascx.cs">
+      <DependentUpon>SP2013.Custom.GlobalNavKeyboard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Custom.GlobalNav\SP2013.Custom.GlobalNavKeyboard.ascx.designer.cs">
+      <DependentUpon>SP2013.Custom.GlobalNavKeyboard.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\Custom.GlobalNav\SP2013.Custom.GlobalNav.ascx.cs">
+      <DependentUpon>SP2013.Custom.GlobalNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\Custom.GlobalNav\SP2013.Custom.GlobalNav.ascx.designer.cs">
+      <DependentUpon>SP2013.Custom.GlobalNav.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ApplyThemeToWeb\ApplyThemeToWeb.EventReceiver.cs">
+      <DependentUpon>ApplyThemeToWeb.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\DeployComposedLook\DeployComposedLook.EventReceiver.cs">
+      <DependentUpon>DeployComposedLook.feature</DependentUpon>
+    </Compile>
+    <Compile Include="InheritBranding\InheritBranding.cs" />
+    <Compile Include="Layouts\SP2013.Custom.Branding\sp2013custombranding.aspx.cs">
+      <DependentUpon>sp2013custombranding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SP2013.Custom.Branding\sp2013custombranding.aspx.designer.cs">
+      <DependentUpon>sp2013custombranding.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Custom-Resource-en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Custom-Resource-en-US.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SP2013Custom_MasterSiteNav\SP2013CustomSiteNav.master" />
+    <None Include="SP2013Custom_MasterSiteNav\SP2013CustomSiteNav.preview" />
+    <None Include="SP2013Custom_MasterSiteNav\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8fec1c4f-269e-4e40-a8ec-3082bc88e38c}</SharePointProjectItemId>
+    </None>
+    <None Include="SP2013Custom_Master\SP2013Custom.master" />
+    <None Include="SP2013Custom_Master\SP2013Custom.preview" />
+    <None Include="SP2013Custom_Master\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{10dbfd7f-ae64-4a8d-a790-c292f3789255}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\ApplyThemeToWeb\ApplyThemeToWeb.feature">
+      <FeatureId>{7fc21856-7e16-4170-b867-277cbc2215bf}</FeatureId>
+    </None>
+    <None Include="Features\DeployComposedLook\DeployComposedLook.feature">
+      <FeatureId>{946dcb4f-7528-4c1c-a12e-48d16fa79ebc}</FeatureId>
+    </None>
+    <None Include="Features\DeployComposedLookSiteNav\DeployComposedLookSiteNav.feature">
+      <FeatureId>{1cb589b9-e05d-415a-b9d2-509c2ae459d9}</FeatureId>
+    </None>
+    <None Include="Features\ProvisionWebTheme\ProvisionWebTheme.feature">
+      <FeatureId>{d94924e2-0d8c-4849-a6f1-e66223d2451e}</FeatureId>
+    </None>
+    <None Include="InheritBranding\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6093dd85-78da-41f1-99e9-6d3001ab96d7}</SharePointProjectItemId>
+    </None>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{945af6e1-08b2-416d-9d69-cb2db9f52226}</SharePointProjectItemId>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b46ffb1d-e025-4db5-8da4-0b16691a9a7a}</SharePointProjectItemId>
+    </None>
+    <None Include="test.snk" />
+    <None Include="Theme1\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{456e767b-48bb-49cd-b4a5-92543f5f270f}</SharePointProjectItemId>
+    </None>
+    <None Include="Theme1\SP2013Custom.spcolor" />
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3ce4b968-483f-4cfe-a676-ed04bfa24f64}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{46ed7209-4756-49cb-ba8e-c52e3208c676}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SP2013Custom_MasterSiteNav\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SP2013Custom_Master\SP2013Custom\customHideNav.css" />
+    <Content Include="SP2013Custom_Master\SP2013Custom\custom.css" />
+    <Content Include="SP2013Custom_Master\SP2013Custom\customheader.png" />
+    <Content Include="SP2013Custom_Master\Elements2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SP2013Custom_Master\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ControlTemplates\Custom.GlobalNav\SP2013.Custom.GlobalNavKeyboard.ascx" />
+    <Content Include="SP2013Custom_Master\SP2013Custom\logo.png" />
+    <Content Include="Features\ApplyThemeToWeb\ApplyThemeToWeb.Template.xml">
+      <DependentUpon>ApplyThemeToWeb.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\DeployComposedLook\DeployComposedLook.Template.xml">
+      <DependentUpon>DeployComposedLook.feature</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\DeployComposedLookSiteNav\DeployComposedLookSiteNav.Template.xml">
+      <DependentUpon>DeployComposedLookSiteNav.feature</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\ProvisionWebTheme\ProvisionWebTheme.Template.xml">
+      <DependentUpon>ProvisionWebTheme.feature</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="InheritBranding\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Layouts\SP2013.Custom.Branding\sp2013custombranding.aspx" />
+    <Content Include="Theme1\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ControlTemplates\Custom.GlobalNav\SP2013.Custom.GlobalNav.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CustomBranding.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CustomBranding.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Resources\Custom-Resource-en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Custom-Resource-en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <DeploymentConfigurations>
+          <DeploymentConfiguration Name="New Deployment Configuration">
+            <DeploymentSteps>
+            </DeploymentSteps>
+            <RetractionSteps>
+            </RetractionSteps>
+          </DeploymentConfiguration>
+        </DeploymentConfigurations>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
