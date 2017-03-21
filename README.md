@@ -12,9 +12,9 @@ This SharePoint 2013 farm solution illustrates a custom branding solution that i
 
 
 To do:
-Debug 508 page
-Fix third level menu issue
-Test features
+Debug 508 page/
+Fix third level menu issue/
+Test features/
 Remove full qualified domain from user control
 
 Path > /image/../vs2015/projects/farm
