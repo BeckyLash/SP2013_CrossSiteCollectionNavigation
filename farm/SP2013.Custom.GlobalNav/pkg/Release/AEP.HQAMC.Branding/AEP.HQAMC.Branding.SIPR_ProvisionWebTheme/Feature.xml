@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="AEP.HQAMC.Branding Provision Web Theme" ActivateOnDefault="FALSE" AlwaysForceInstall="TRUE" Description="This feature should be hidden." Id="a32b6912-77e8-459d-ad50-e387c465320f" Scope="Web" Version="1.0.0.0">
-  <ElementManifests>
-    <ElementManifest Location="InheritBranding\Elements.xml" />
-  </ElementManifests>
-</Feature>

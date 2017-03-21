@@ -1,1 +1,0 @@
-bin\Debug\AEP.HQAMC.GlobalNav.wsp

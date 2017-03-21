@@ -1,5 +1,0 @@
-﻿<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="SP2013 Custom Branding Provision Web Theme" ActivateOnDefault="FALSE" AlwaysForceInstall="TRUE" Description="This feature should be hidden." Hidden="TRUE" Id="a32b6912-77e8-459d-ad50-e387c465320f" Scope="Site" Version="1.0.0.0">
-  <ElementManifests>
-    <ElementManifest Location="InheritBranding\Elements.xml" />
-  </ElementManifests>
-</Feature>

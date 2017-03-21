@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Module Name="Theme1" List="116" Url="_catalogs/theme">
-    <File Path="Theme1\SP2013Custom.spcolor" Url="15/SP2013Custom.spcolor" Type="GhostableInLibrary" ReplaceContent="True" />
-  </Module>
-</Elements>
