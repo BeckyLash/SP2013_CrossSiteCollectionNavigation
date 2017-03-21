@@ -1,7 +1,0 @@
-
-
-
-1. Popout breadcrumb hidden on Internet Explorer 11, shows up fine on Internet Explorer 10
-might need possible style adjumstments in future
-
-
