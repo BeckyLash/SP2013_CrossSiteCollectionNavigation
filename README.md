@@ -15,6 +15,6 @@ To do:
 Debug 508 page/
 Fix third level menu issue/
 Test features/
-Remove full qualified domain from user control
+Fix getting current site in user control
 
 Path > /image/../vs2015/projects/farm
