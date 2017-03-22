@@ -13,6 +13,6 @@ This SharePoint 2013 farm solution consists of a custom branding solution that i
 
 To do:
 Debug 508 page/
-Fix third level menu issue/
+Reduce css/
 Test features/
 Path > /image/../vs2015/projects/farm
