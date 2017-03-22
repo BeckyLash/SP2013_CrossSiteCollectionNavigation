@@ -28,14 +28,13 @@ namespace Custom.SP2013.GlobalNav.ControlTemplates.Custom.SP2013.GlobalNav
 
                     try
                     {
-                        ////SPSite thisSite = new SPSite(SPContext.Current.Site.WebApplication.AlternateUrls[0].Uri.AbsoluteUri);
+                       
+                        SPSite thisSite = SPContext.Current.Site;
 
-
-                        SPSite thisSite = new SPSite("http://YOURDOMAIN/sites/test/");
+                      
                         if (thisSite != null)
                         {
-                            using (thisSite)
-                            {
+                           
                                 html = "";
                                 TaxonomySession session = new TaxonomySession(thisSite);
 
@@ -76,7 +75,7 @@ namespace Custom.SP2013.GlobalNav.ControlTemplates.Custom.SP2013.GlobalNav
                             }
 
 
-                        }
+                        
                     }
                     catch
                     {
